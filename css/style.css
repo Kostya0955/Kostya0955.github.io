@@ -257,54 +257,77 @@ select.error{
 	color: #f37429;
 }
 /* my-event */
-@media(max-width: 768px){
-	span.event-date{
-	margin-left: 18px;
+@media(min-width:768px){
+		span.event-time{
+		margin-left: 0;
 	}
+}
+@media(max-width: 767px){
+	/* span.event-date{
+	margin-left: 18px;
+	} */
 	span.event-time{
-		margin-left: 124px;
+		margin-left: 105px;
 	}
 	span.event-city{
-		margin-left: 68px;
+		margin-left: 47px;
 	}
 	span.event-address{
-		margin-left: 124px;
+		margin-left: 105px;
 	}
 }
 .cv_list_item{
 	line-height: 24px;
 }
 .cv_list_title a {
-	font-size: 16px;
+	font-size: 14px;
 }
 .cv_list_status{
 	margin-right: 30px;
 }
 .event {
 	border: 1px solid rgba(135, 135, 135, 0.2);
+	padding-right: 40px;
+	
 }
-/* div.event{
-	height: 88px;
-} */
 @media(max-width:467px){
-	.event img{
-float:left
-	}
+		.event { 
+			padding: 22px 0;
+			padding-right: 40px;
+		}
+		.event img {
+			margin: 5px 19px 10px 18px;
+			float:left;
+			width: 22px;
+			height: 28px;
+		}
+		.event p {
+			color: #f37429;
+			display: inline;
+			line-height: 18px;
+			font-size: 12px;
+		}
 
-	.event p{
-		line-height: 2;
-	}
 }
 .registration-p{
  margin-top: 20px;
+ line-height: 24px;
 }
+
+@media(min-width:768px){
 div.event-list{
 	background-color: white;
 	padding: 0 20px 30px;
 	margin-top:30px;
 	height: 240px;
-
 }
+}
+div.event-list{
+	background-color: white;
+	margin-top:30px;
+	height: 240px;
+}
+
 div#empty-events{
 	margin-bottom: 25px;
 	padding: 30px 17px 40px 19px;
@@ -348,40 +371,71 @@ div.event-list-item{
 div.event-list-item p{
 color: 	#a3a5ab;
 }
+.Cancle_reg {
+padding: 5px;
+color: 	#a3a5ab;
+}
+.Cancle_event{
+	padding-top: 2px;
+	display: inline;
+}
+@media(min-width: 768px) and (max-width: 911px){
+	.Cancle_event{
+	margin-left: 15px;
+	}
+}
 
 div.event-list-item img{
 border-radius: 100px;
 background-color: #b7b7b7;
+}
+
+
+@media(min-width:768px){
+.event img {
+	width: 22px;
+	height: 28px;
+	margin: 12px 19px 10px 18px;
 }
 .event p{
 	color: #f37429;
 	display: inline;
 	font-size: 14px;
 }
-.event img {
-	width: 22px;
-	height: 28px;
-	margin: 12px 19px 10px 18px;
 }
 span.registration-p p {
 	width: 771px;
 	height: 14px;
 }
+@media (max-width: 401px) and (min-width: 370px) {
+	div.event-list{
+		height: 375px !important;
+	}
+}
+@media (min-width: 321px) and (max-width: 360px) {
+	div.event-list{
+		height: 385px !important;
+	}
+}
+@media (max-width: 991px) and (min-width: 700px) {
+	div.event-list{
+		height: 280px !important;
+	}
+}
 @media (max-width: 991px) and (min-width: 403px) {
 	div.event-list{
-		/* height:270px; */
-		height: 330px;
+		height: 350px;
 	}
 }
 @media (max-width: 402px){
 	div.plan-meropriatia {
 		height: 500px;
-	
 	}
 	div.event-list{
-		height: 380px;
+		height: 395px;
 	}
 }
+
 @media (max-width: 767px) {
 	.footer_txt-site{
 	display: none;
@@ -1543,14 +1597,21 @@ div.plan-meropriatia{
 		height: 360px;
 	}
 }
+
 @media (min-width: 991px){
 	div.plan-meropriatia{
 		 height: 360px; 
 	}
 }
+@media (max-width: 991px) and (min-width: 700px){
+div.plan-meropriatia {
+		height: 400px !important;
+}
+
+}
 @media(max-width: 768px) and (min-width: 403px){
 	div.plan-meropriatia{
-		height: 440px;
+		height: 450px;
 	}
 }
 div.plan-meropriatia p{
@@ -4983,7 +5044,7 @@ table.company_short_table tr td:nth-child(2n) {
 .cv_list_item > div {
 	float: left;
 	min-height: 1px;
-	padding-right: 20px;
+	/* padding-right: 20px; это нужно поправить если надпись "отменить регистрацию" все испортит */ 
 }
 .cv_list_item > div.cv_list_del {
 	float: right;

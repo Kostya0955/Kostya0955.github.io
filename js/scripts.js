@@ -1,8 +1,6 @@
 jQuery(function($){
 
 $(document).ready(function () {
-
-  
 	// My events 
 	var event = 1;
 	if (event==1){
@@ -10,7 +8,6 @@ $(document).ready(function () {
 		$('#empty-events').hide();
 		$('#empty').hide();
 	} else {
-		$('#empty').show();
 		$('#event').attr('href', '#empty-events');
 		$('#meropriatia').hide();
 		$('#empty-events').show();
