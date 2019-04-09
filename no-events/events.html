@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta name="robots" content="noindex, nofollow" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>События</title>
+
+<link href="/favicon.ico" rel="icon" />
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="js/bootstrap.js"></script>
+
+<!-- slick -->
+<script src="js/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+<!-- Equal heights -->
+<script src="js/jquery.equalheights.min.js"></script>
+
+<script src="js/scripts.js"></script>
+<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+
+<!--[if lte IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<link rel='stylesheet' href='css/ie.css' type='text/css' media='all' />
+<![endif]-->
+
+</head>
+
+<body>
+
+
+<div class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="header_inner">
+					<a class="logo" href="/"><img src="images/logo.png" alt=""/></a>
+					<div class="header_txt hidden-xs">Портал по поиску работы для студентов и выпускников технических и естественнонаучных специальностей</div>
+				</div>
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+</div>
+
+<nav class="navbar">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+					<span class="bars">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</span>
+					<span class="btn-txt">Меню</span>
+				</button>				
+
+				<div id="menu" class="navbar-collapse collapse" role="navigation">
+					<div id="menu-close" class="visible-xs"></div>
+					<ul class="nav navbar-nav" role="menu">
+						<li><a href="vacancies.html">Вакансии</a></li>
+						<li><a href="internship.html">Стажировки</a></li>
+						<li><a href="events.html">События</a></li>
+						<li class="visible-lg visible-md"><a href="grants.html">Гранты и стипендии</a></li>
+						<li class="visible-lg"><a href="employers.html">Работодатели</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ещё <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="hidden-lg hidden-md"><a href="grants.html">Гранты и стипендии</a></li>
+								<li class="hidden-lg"><a href="employers.html">Работодатели</a></li>
+								<li><a href="tech.html">Технологии трудоустройства</a></li>
+								<li><a href="news.html">Новости науки и техники</a></li>
+								<li><a href="fair">Ярамарка вакансий "Формула карьеры"</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<button type="button" class="personal-btn navbar-toggle collapsed" data-toggle="collapse" data-target="#personal" aria-expanded="false">
+					<span class="personal-btn-txt">Войти</span><span class="login-icon"></span>
+				</button>				
+
+				<div class="navbar_links navbar-collapse collapse" id="personal" role="navigation">
+					<a class="navbar_link-btn" href="#">Опубликовать вакансию</a>
+					<a class="navbar_link-btn" href="#">Разместить резюме</a>
+					<a class="navbar_link-login" href="#"><span class="login-icon"></span><span class="login-txt">Войти</span></a>
+					<div class="navbar_links_tip"></div>
+				</div>
+
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+</nav>
+
+
+
+<div class="index_top_important">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li>События</li>
+				</ul>
+			</div>
+		</div><!-- /row -->
+
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 class="page-title">Будь в курсе!</h1>
+			</div>
+		</div><!-- /row -->
+
+		<div class="row row_important row_important-index">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="#" class="important">
+					<span class="important_img important_img_logo" style="background-image: url('images/img1.jpg');"></span>
+					<span class="important_title">Молодежный форум «ПРОФЕССИОНАЛЬНЫЙ РОСТ»</span>
+					<span class="important_txt">Москва</span>
+					<span class="important_aplication"><strong>17 октября 2018</strong></span>
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="#" class="important">
+					<span class="important_img" style="background-image: url('images/img2.jpg');"><span class="important_img_shade"></span></span>
+					<span class="important_title">Международная конференция разработчиков</span>
+					<span class="important_txt">Санкт-Петербург</span>
+					<span class="important_aplication"><strong>27 июня 2018</strong></span>
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="#" class="important">
+					<span class="important_img important_img_logo" style="background-image: url('images/img3.jpg');"></span>
+					<span class="important_title">Ярмарка вакансий «Формула карьеры»</span>
+					<span class="important_txt">Москва</span>
+					<span class="important_aplication"><strong>24 октября 2018</strong></span>
+				</a>
+			</div>
+		</div><!-- /row -->
+
+	</div>
+</div>
+
+
+
+<div class="container">
+	
+	<div class="row news_list">
+		<div class="col-xs-12">
+			<h2 class="page-title">События</h2>
+			<form method="post" action="#" class="filter">
+				<div class="filter_spec">
+					<div class="filter_checkboxes">
+						<input name="spec" id="spec0" type="checkbox" value="" checked><label for="spec0">Все события <span>(28)</span></label>
+						<input name="spec" id="spec1" type="checkbox" value="Конкурсы"><label for="spec1">Конкурсы <span>(3)</span></label>
+						<input name="spec" id="spec2" type="checkbox" value="Ярмарки вакансий"><label for="spec2">Ярмарки вакансий <span>(1)</span></label>
+						<input name="spec" id="spec3" type="checkbox" value="Конференции"><label for="spec3">Конференции  <span>(7)</span></label>
+						<input name="spec" id="spec4" type="checkbox" value="Мастер-классы"><label for="spec4">Мастер-классы <span>(3)</span></label>
+						<input name="spec" id="spec5" type="checkbox" value="Лекции"><label for="spec5">Лекции <span>(2)</span></label>
+					</div>
+				</div>
+
+			</form>
+		</div>
+
+
+
+		<div class="col-sm-4 col-xs-12">
+			<a href="#" class="news">
+				<span class="news_date">30.06.18</span>
+				<span class="news_img_wrapper"><span class="news_img" style="background-image: url('images/news1.jpg');"></span></span>
+				<span class="news_info">
+					<span class="news_title">Конкурс научных работ «Евразийская интеграция: молодежное измерение»</span>
+					<span class="news_excerpt">Выявление и поддержка талантливой молодежи. К участию приглашаются молодые люди в возрасте до 35 лет ...</span>
+				</span>
+				<span class="news_deadline">Прием заявок <strong>до 30.06.18</strong></span>
+				<span class="news_place">Москва <strong>19 августа 2018</strong></span>
+			</a>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<a href="#" class="news">
+				<span class="news_date">30.06.18</span>
+				<span class="news_img_wrapper"><span class="news_img" style="background-image: url('images/news2.jpg');"></span></span>
+				<span class="news_info">
+					<span class="news_title">Молодежный конкурс «Будущие асы цифрового машиностроения»</span>
+					<span class="news_excerpt">Конкурс проектов в области инженерного творчества для школьников и студентов</span>
+				</span>
+				<span class="news_deadline">Прием заявок <strong>до 30.06.18</strong></span>
+			</a>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<a href="#" class="news">
+				<span class="news_date">30.06.18</span>
+				<span class="news_img_wrapper"><span class="news_img" style="background-image: url('images/news3.jpg');"></span></span>
+				<span class="news_info">
+					<span class="news_title">Конкурс в области энергетики «Энергия Прорыва»</span>
+					<span class="news_excerpt">Выявления лучших специалистов, ученых, успешно реализовавших за последние 5 лет ...</span>
+				</span>
+				<span class="news_deadline news_active">Прием заявок <strong>до 30.06.18</strong></span>
+				<span class="news_place">Екатеринбург <strong>19 августа 2018</strong></span>
+			</a>
+		</div>
+		<div class="clearfix"></div>
+
+		<div class="col-sm-4 col-xs-12">
+			<a href="#" class="news">
+				<span class="news_date">30.06.18</span>
+				<span class="news_img_wrapper"><span class="news_img" style="background-image: url('images/news1.jpg');"></span></span>
+				<span class="news_info">
+					<span class="news_title">Конкурс научных работ «Евразийская интеграция: молодежное измерение»</span>
+					<span class="news_excerpt">Выявление и поддержка талантливой молодежи. К участию приглашаются молодые люди в возрасте до 35 лет ...</span>
+				</span>
+				<span class="news_deadline">Прием заявок <strong>окончен</strong></span>
+				<span class="news_place">Москва <strong>19 августа 2018</strong></span>
+			</a>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<a href="#" class="news news-expired">
+				<span class="news_date">30.06.18</span>
+				<span class="news_img_wrapper"><span class="news_img" style="background-image: url('images/news2.jpg');"></span></span>
+				<span class="news_info">
+					<span class="news_title">Молодежный конкурс «Будущие асы цифрового машиностроения»</span>
+					<span class="news_excerpt">Конкурс проектов в области инженерного творчества для школьников и студентов</span>
+				</span>
+				<span class="news_place">Мероприятие <strong>окончено</strong></span>
+			</a>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<div class="annoncement">
+				<div class="annoncement_title">Планируете мероприятие для студентов?</div>
+				<a href="#" class="button">Разместить анонс*</a>
+				<div class="annoncement_txt">* Это бесплатно</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+		<div class="col-sm-4 col-xs-12">
+			<a href="#" class="news">
+				<span class="news_date">30.06.18</span>
+				<span class="news_img_wrapper"><span class="news_img" style="background-image: url('images/news1.jpg');"></span></span>
+				<span class="news_info">
+					<span class="news_title">Конкурс научных работ «Евразийская интеграция: молодежное измерение»</span>
+					<span class="news_excerpt">Выявление и поддержка талантливой молодежи. К участию приглашаются молодые люди в возрасте до 35 лет ...</span>
+				</span>
+				<span class="news_person">Ирина Полякова</span>
+			</a>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<a href="#" class="news">
+				<span class="news_date">30.06.18</span>
+				<span class="news_img_wrapper"><span class="news_img" style="background-image: url('images/news2.jpg');"></span></span>
+				<span class="news_info">
+					<span class="news_title">Молодежный конкурс «Будущие асы цифрового машиностроения»</span>
+					<span class="news_excerpt">Конкурс проектов в области инженерного творчества для школьников и студентов</span>
+				</span>
+				<span class="news_person">Ирина Полякова</span>
+			</a>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<a href="#" class="news">
+				<span class="news_date">30.06.18</span>
+				<span class="news_img_wrapper"><span class="news_img" style="background-image: url('images/news3.jpg');"></span></span>
+				<span class="news_info">
+					<span class="news_title">Конкурс в области энергетики «Энергия Прорыва»</span>
+					<span class="news_excerpt">Выявления лучших специалистов, ученых, успешно реализовавших за последние 5 лет ...</span>
+				</span>
+				<span class="news_person">Ирина Полякова</span>
+			</a>
+		</div>
+		<div class="clearfix"></div>
+
+	</div><!-- /row -->
+
+
+
+	<div class="row">
+		<div class="col-xs-12">
+			<a href="#" class="pagination_more">Ещё</a>
+
+			<nav aria-label="Page navigation">
+			  <ul class="pagination">
+				<li>
+				  <a href="#" aria-label="Назад">
+					<img src="images/arrow-left.png" alt="" /><span aria-hidden="true">Назад</span>
+				  </a>
+				</li>
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li>
+				  <a href="#" aria-label="Вперед">
+					<span aria-hidden="true">Вперед</span><img src="images/arrow-right.png" alt="" />
+				  </a>
+				</li>
+			  </ul>
+			</nav>
+
+		</div>
+
+	</div><!-- /row -->
+
+</div><!-- /container -->
+
+
+
+<div class="subscribe">
+	<form method="post" action="#">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 col-sm-12">
+					<label for="email">Подписаться на новости сайта</label>
+				</div>
+				<div class="col-sm-7 col-sm-12">
+					<div class="input-wrapper">
+						<input type="text" name="email" id="email" placeholder="Ваш E-mail" value="" />
+						<input type="submit" value="Отправить" />
+					</div>
+				</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</form>
+</div>
+
+
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 visible-lg visible-md">
+				<div class="footer_txt footer_txt-site">
+					<a href="#">О проекте</a>
+					<a href="#">Карта сайта</a>
+					<a href="#">Пользовательское соглашение</a>
+					<a href="#">Контакты</a>
+				</div>
+				<div class="footer_btns">
+					<div class="footer_counter"><img src="images/counter.jpg" alt="" /></div>
+					<a href="#" class="footer_vk"></a>
+				</div>
+			</div>
+			<div class="col-md-7 col-sm-9 hidden-xs">
+				<div class="footer_txt-employee">
+				<div class="footer-title">Соискателям</div>
+					<div class="row">
+						<div class="col-sm-5 col-xs-12">
+							<div class="footer_txt">
+								<a href="#">Вакансии</a>
+								<a href="#">Стажировки</a>
+								<a href="#">События</a>
+								<a href="#">Гранты и стипендии</a>
+								<a href="#">Работодатели</a>
+							</div>
+						</div>
+						<div class="col-sm-7 col-xs-12">
+							<div class="footer_txt footer_txt2">
+								<a href="#">Разместить резюме</a>
+								<a href="#">Личный кабинет</a>
+								<a href="#">Ярмарка вакансий</a>
+								<a href="#">Технология трудоустройства</a>
+								<a href="#">Новости науки и техники</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-3 hidden-xs">
+				<div class="footer_txt footer_txt-employer">
+					<div class="footer-title">Работодателям</div>
+					<a href="#">Условия сотрудничества</a>
+					<a href="#">Поиск соискателей</a>
+					<a href="#">Личный кабинет</a>
+					<a href="#">Реклама на сайте</a>
+				</div>
+			</div>
+			<div class="col-sm-12 visible-sm visible-xs">
+				<div class="footer_txt footer_txt-site">
+					<a href="#">О проекте</a>
+					<a href="#">Карта сайта</a>
+					<a href="#">Пользовательское соглашение</a>
+					<a href="#">Контакты</a>
+				</div>
+				<div class="footer_btns">
+					<div class="footer_counter"><img src="images/counter.jpg" alt="" /></div>
+					<a href="#" class="footer_vk"></a>
+				</div>
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="footer-bottom_txt">info@profyrost.ru © 2003-2018</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="footer-bottom_txt text-right">Дизайн <span class="hidden-xs">разработан компанией</span> <a href="#">«Alex Media»</a></div>
+				</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div>
+</div>
+
+
+<div id="menushade"></div>
+</body>
+</html>
