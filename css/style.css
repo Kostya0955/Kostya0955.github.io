@@ -389,6 +389,7 @@ color: #f37429;
 }
 
 div.event-list-item img{
+margin-bottom: 2px;
 border-radius: 100px;
 background-color: #b7b7b7;
 }
