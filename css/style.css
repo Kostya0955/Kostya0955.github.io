@@ -375,6 +375,9 @@ color: 	#a3a5ab;
 padding: 5px;
 color: 	#a3a5ab;
 }
+.hover_text:hover{
+color: #f37429;
+}
 .Cancle_event{
 	padding-top: 2px;
 	display: inline;
@@ -403,9 +406,13 @@ background-color: #b7b7b7;
 	font-size: 14px;
 }
 }
-span.registration-p p {
+/* span.registration-p p {
 	width: 771px;
 	height: 14px;
+} */
+.registration{
+	font-size: 13px !important;
+
 }
 @media (max-width: 401px) and (min-width: 370px) {
 	div.event-list{
@@ -414,12 +421,12 @@ span.registration-p p {
 }
 @media (min-width: 321px) and (max-width: 360px) {
 	div.event-list{
-		height: 385px !important;
+		height: 375px !important;
 	}
 }
 @media (max-width: 991px) and (min-width: 700px) {
 	div.event-list{
-		height: 280px !important;
+		height: 270px !important;
 	}
 }
 @media (max-width: 991px) and (min-width: 403px) {
@@ -427,9 +434,14 @@ span.registration-p p {
 		height: 350px;
 	}
 }
+@media (min-width: 320px) and (max-width: 415px){
+	div.plan-meropriatia p{
+		line-height: 24px;
+	}
+}
 @media (max-width: 402px){
 	div.plan-meropriatia {
-		height: 500px;
+		height: 510px;
 	}
 	div.event-list{
 		height: 395px;
@@ -1605,14 +1617,27 @@ div.plan-meropriatia{
 }
 @media (max-width: 991px) and (min-width: 700px){
 div.plan-meropriatia {
-		height: 400px !important;
+		height: 385px !important;
 }
 
 }
 @media(max-width: 768px) and (min-width: 403px){
 	div.plan-meropriatia{
-		height: 450px;
+		height: 475px;
 	}
+}
+@media(max-width: 412px) and (min-width: 410px){
+	div.event-list{
+		height: 355px;
+	}
+}
+@media(max-width: 320px) and (min-width: 318px){
+	div.event-list {
+    height: 405px !important;
+}
+div.plan-meropriatia {
+		height: 520px !important;
+}
 }
 div.plan-meropriatia p{
 	width: 217px;
@@ -5038,6 +5063,11 @@ table.company_short_table tr td:nth-child(2n) {
 	overflow: hidden;
 	border-bottom: 2px solid #fff;
 }
+@media(max-width: 402px) and (min-width: 360px){
+.cv_list_item {
+	padding: 25px 0;
+}
+}
 .cv_list_item_header {
 	color: #a3a5ab;
 }
@@ -5098,6 +5128,9 @@ table.company_short_table tr td:nth-child(2n) {
 a.cv_views_blue, a.cv_views_blue:hover, a.cv_views_blue:focus, a.cv_views_blue:active {
 	color: #0373a2;
 	text-decoration: underline;
+}
+a.cv_views_blue:hover{
+	color: #f37429 !important;
 }
 a.cv_views_red, a.cv_views_red:hover, a.cv_views_red:focus, a.cv_views_red:active {
 	color: #f37429;
