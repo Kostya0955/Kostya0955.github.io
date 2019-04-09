@@ -2,7 +2,7 @@ jQuery(function($){
 
 $(document).ready(function () {
 	// My events 
-	var event = 0;
+	var event = 1;
 	if (event==1){
 		$('#meropriatia').show();
 		$('#empty-events').hide();
