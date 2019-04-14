@@ -114,21 +114,10 @@
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Работодатели</a></li>
 				<li><a href="#">EY (Ernst&Young)</a></li>
-				<li>Стажер производственного отдела (Operations Department)</li>
+				<li>Стажер производствен&shy;ного отдела (Operations Department)</li>
 			</ul>
 		</div>
 	</div><!-- /row -->
-
-
-
-	<div class="row">
-		<div class="col-xs-12">
-			<div class="bannerad">
-				<img src="images/banner.gif" alt="" />
-			</div>
-		</div>
-	</div><!-- /row -->
-
 
 
 	<div class="row">
@@ -205,43 +194,46 @@
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="respond">
-				<button class="open_fast">Откликнуться<span> на вакансию</span></button>
+				<form method="post" action="#" class="vacancy_respond_form">
+					<h3>Откликнуться на вакансию</h3>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+							<div class="error_text invisible">Введите имя</div>
+							<input type="text" name="name" placeholder="Имя">
+						</div>
+						<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+							<div class="error_text invisible">Введите фамилию</div>
+							<input type="text" name="surname" placeholder="Фамилия">
+						</div>
+						<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+							<div class="error_text">Введите корректный e-mail</div>
+							<input type="text" name="surname" placeholder="e-mail" class="error">
+							<div class="email-taken">Этот адрес уже занят. <a href="#">Напомнить пароль?</a></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+							<div class="recapture">
+								<img src="images/recapture.png" width="100%" alt=""/><!-- надо заменить на настоящую капчу -->
+							</div>
+						</div>
+						<div class="clearfix visible-sm"></div>
+						<div class="col-md-8 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+							<div class="checkbox"><input type="checkbox" name="subscr" id="subscr"><label for="subscr">Подписаться на рассылку новостей сайта www.physcareer.ru</label></div>
+							<div class="checkbox"><input type="checkbox" name="agree" id="agree"><label for="agree" class="label-error">Я даю <a href="#">согласие</a> на обработку моих персональных данных *</label></div>
+						</div>
+					</div>
+					<input type="submit" value="Отправить" />
+				</form>
+				<div class="vacancy_respond_login">
+					<span>Уже зарегистрированы?</span> <a href="#">Войти</a>
+				</div>
 			</div>
 		</div>
 	</div><!-- /row -->
 
-	<div class="popup_fast">
-		<h2 class = "popup_title"> Отклик на вакансию</h2>
-		<div class="close-img">
-		<img id="close-img" src="images/close.png" alt="">	
-		</div>
-		<p>Стажер производственного отдела в компании EY (Ernst&Young)</p>
-		<div class="CV-empty">
-			<span>У вас нет опубликованного резюме для отклика.</span>
-			<button class="VC-button">Создать резюме</button>
-			<p class="registration"> <a href="#" class="cv_views_blue hover_text">Опубликовать</a> ранее созданное резюме </p>
-		</div>
-		<div class= "CV">
-			<p>Резюме для отклика</p>
-			<div class ="radio_VC"> 
-				<input type="radio" id="first" name="drone" value="Специалист отдела разработки" checked>
-				<label for="first">Специалист отдела разработки</label>
-				<a href="">Посмотреть резюме</a>
-			
-				<input type="radio" id="second" name="drone" value="Программист Java" checked>
-				<label for="second">Программист Java</label>
-				<a href="">Посмотреть резюме</a>
-			</div>
-			<div class= "VC-buttons">
-			<button class="VC-button">Откликнуться</button>
-			<button class="VC-button cancle_button">Отмена</button>
-			</div>
-		</div>
-		<p id ="CV-p"">Вы можете напрямую отправить письмо работодателю.</p>
-		<a id="show_contact" href="">Показать контакт</a>
-		<a id="show_mail" href="mailto:test@gmail.com">test@gmail.com</a>
-	</div>
-	<div class="bg_popup"></div>
+	
+	
 	<div class="row">
 		<div class="col-xs-12 jobs">
 
@@ -250,7 +242,7 @@
 			<h3 class="vacancy_jobs">ВАКАНСИИ из этой профессиональной области</h3>
 
 			<a href="#" class="job">
-				<span class="job_title">Стажер производствен&shy;ного отдела (operations department)</span>
+				<span class="job_title">Стажер производственного отдела (operations department)</span>
 				<span class="job_txt">British American Tobacco Russia<br>Москва</span>
 			</a>
 

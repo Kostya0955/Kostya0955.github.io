@@ -12,7 +12,7 @@ jQuery(function ($) {
       $('#empty-events').show()
     }
     // VC
-    var VC = 1
+    var VC = 0
 		if (VC === 0) {
       $('.CV').hide()
       $('.popup_fast').addClass('popup_fast_empty')
