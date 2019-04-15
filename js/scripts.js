@@ -15,7 +15,8 @@ jQuery(function ($) {
     var VC = 1
 		if (VC === 0) {
       $('.CV').hide()
-      $('.popup_fast').addClass('popup_fast_empty')
+	  $('.popup_fast').addClass('popup_fast_empty')
+
     } else {
       //   $('.CV').show()
       $('.CV-empty').hide()
@@ -33,7 +34,8 @@ jQuery(function ($) {
     $('#show_contact').click(function (event) {
       event.preventDefault()
       $('#show_contact').hide()
-      $('#show_mail').show()
+	  $('#show_mail').show()
+		$('#show_mail').css("text-decoration", "none");
     })
     if (($(window).width()) > 362) {
       $(window).scroll(function () {
