@@ -1648,8 +1648,12 @@ a.about_more:hover, a.about_more:active {
  @media (min-width: 320px) and (max-width: 768px){
 	  .CV-empty {
 			height: 215px;
-	  margin-left: -22px;
-		width: 284px;
+			margin-left: -22px;
+			width: 284px;
+		}
+		.CV-empty a {
+			margin-right: 100px;
+    margin-left: 75px;
 		}
 		/* .popup_fast_empty {
 			height: 480px !important;
@@ -4019,7 +4023,7 @@ input[type="radio"] {
  margin-bottom: -5px;
 }
 .radio_VC label {
-margin-right: 90px;
+margin-right: 113px;
 margin-bottom: 23px;
 height: 14px;
 color: #3c3a3a;
@@ -4040,7 +4044,7 @@ color: #337ab7;
 color: #f37429;
 }
 .radio_VC label[for="second"]{
-margin-right: 177px;
+margin-right: 199px;
  margin-bottom: 39px;
 height: 14px;
 color: #3c3a3a;
