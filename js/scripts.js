@@ -12,7 +12,7 @@ jQuery(function ($) {
       $('#empty-events').show()
     }
     // VC
-    var VC = 1
+    var VC = 0
 		if (VC === 0) {
       $('.CV').hide()
 	  $('.popup_fast').addClass('popup_fast_empty')
@@ -22,8 +22,13 @@ jQuery(function ($) {
       $('.CV-empty').hide()
     }
     // vacancy
+
     $('.open_fast').click(function () {
-      $('.popup_fast').css({ 'top': $(window).scrollTop() + 100 }).addClass('active')
+      if (($(window).width()) < 769) {
+      $('.popup_fast').css({ 'top': $(window).scrollTop() + 80 }).addClass('active')
+      } else {
+        $('.popup_fast').css({ 'top': $(window).scrollTop() + 100 }).addClass('active')
+      }
       $('.bg_popup').fadeIn()
       $('#close-img').click(function () {
         $('.popup_fast').removeClass('active')
@@ -37,11 +42,13 @@ jQuery(function ($) {
 	  $('#show_mail').show()
 		$('#show_mail').css("text-decoration", "none");
     })
-    if (($(window).width()) > 362) {
+    if (($(window).width()) > 768) {
       $(window).scroll(function () {
         $('.popup_fast').css({ 'top': $(window).scrollTop() + 100 })
       }).scroll()
-    }
+    } 
+  
+
     // -------------------- Navbar fixed --------------------
 
     var banner_h = ($('#bannerad_index').length) ? $('#bannerad_index').outerHeight() : 0
