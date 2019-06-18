@@ -1,0 +1,44 @@
+.disp1 {
+	border: 1px solid red;
+	width: 50%;
+}
+.disp2{
+	border: 1px solid blue;
+}
+.styl1 {
+	border:1px solid blue;
+}
+.styl2 {
+	border:1px solid red;
+}
+li {
+	display: inline-block;
+	list-style: none;
+	border: 1px solid red;
+}
+ul {
+	border:1px solid black; padding:0;
+}
+.second {
+	border: 1px solid green;
+	position: relative;
+	top: 0px;
+	left: 20px;
+}
+p {
+	border: 1px solid brown;
+}
+section {
+  background: gold;
+  height: 200px;
+  padding: 10px;
+  position: relative; /* Превращает <section> в точку отсчёта для <p> */
+}
+section>p {
+  background: limegreen;
+  color: white;
+  padding: 10px;
+  position: absolute; /* Делает <p> свободно перемещаемым */
+  bottom: 30px; /* 10px снизу */
+  left: 20px; /* 20px слева */
+}

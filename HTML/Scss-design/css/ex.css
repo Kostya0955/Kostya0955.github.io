@@ -1,0 +1,29 @@
+body {
+  background: #e7ece3; }
+
+.block:not(.first) {
+  background: #7c16f1;
+  height: 200px;
+  margin-bottom: 20px; }
+
+.first {
+  margin-top: 100px;
+  background: #7c16f1;
+  height: 100px;
+  margin-bottom: 20px; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+#central-block {
+  padding: 30px; }
+  #central-block ul {
+    list-style: none; }
+    #central-block ul li {
+      font-size: 1.1em;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      color: red; }
+      #central-block ul li:hover {
+        color: white; }
