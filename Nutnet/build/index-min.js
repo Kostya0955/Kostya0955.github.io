@@ -1,1 +1,0 @@
-var modal=document.getElementById("myModal"),play=document.getElementById("play"),span=document.getElementsByClassName("close")[0];play.onclick=function(){modal.style.display="block"},span.onclick=function(){modal.style.display="none"},window.onclick=function(l){l.target==modal&&(modal.style.display="none")};
