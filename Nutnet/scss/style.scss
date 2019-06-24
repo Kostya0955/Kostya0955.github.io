@@ -1,0 +1,113 @@
+@import "variables";
+@import "headers";
+@import "story";
+@import "message";
+@import "footer";
+@import "../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/tooltip";
+@import "../node_modules/bootstrap/scss/popover";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/pagination";
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../fonts/fonts.scss";
+
+%button {
+   color: $primary-color;
+   font-family: Roboto;
+   background-color: transparent;
+   text-transform: uppercase;
+   border: 1px $primary-color solid;
+   width: 121px;
+   padding: 5px;
+}
+.story-button {
+    @extend %button;
+}
+
+  .video-layer {
+     
+      h6 {
+          color: white;
+          font-weight: 400;
+          margin-top: 10px;
+          letter-spacing: 0.8px;
+          font-family: Roboto;
+      }
+
+      height: 500px;
+      background-image: url("/img/city.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      
+
+      .video-overlay {
+          width: 100%;
+          height: 100%;
+          opacity: 0.8;
+          z-index: 0;
+          background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+      }
+
+      .video {
+          text-transform: uppercase;
+          height: 500px;
+          text-align: center;
+       img {
+           width: 60px;
+       }
+      }
+
+  }
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 1; 
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+  }
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaa;
+    float: right; 
+    font-size: 28px;
+    font-weight: bold;
+}
+ 
+
+#burger {
+    float:right;
+    margin: 0px;
+    visibility: hidden;
+}
+.burger div {
+    width: 35px;
+    height: 5px;
+    background: #ffffff;
+    margin: 6px 0;
+}
+

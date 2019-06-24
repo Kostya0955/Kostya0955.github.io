@@ -2,5 +2,7 @@
 Main page
 [news-temp](https://kostya0955.github.io/News-temp)
 News-template
-[Boostrap-temp](https://kostya0955.github.io/Bootstrap-temp)
+[boostrap-temp](https://kostya0955.github.io/Bootstrap-temp)
 Bootstrap-template
+[news-temp](https://kostya0955.github.io/Nutnet)
+Nutnet-template
