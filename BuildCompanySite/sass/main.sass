@@ -395,3 +395,61 @@ img
             color: $white
             margin-top: 30px
             text-align: center
+
+// галерея
+.object-page
+    &_gallery
+        img
+            float: right
+            width: 60%
+
+// модальные окна
+.modal
+    display: none
+    background-color: rgba(0,0,0,0.4)
+    position: fixed
+    left: 0
+    top: 0 
+    width: 100%
+    height: 100%
+    &-content
+        position: relative
+        background-color: $white
+        width: 100%
+        padding: 30px 50px
+        max-width: 370px
+        margin:  50px auto 
+        text-align: center  
+        box-shadow: 0 12px 24px rgba(0,0,1,0.18)
+        .close
+            position: absolute
+            right: 15px
+            top: 15px
+            font-size: 20px
+            line-height: 1
+            opacity: 0.5 
+            &:hover
+                cursor: pointer
+        h4
+            margin-top: 0
+            margin-bottom: 15px
+            font-size: 18px
+            color: $active-color
+        p
+            font-size: 12px
+            margin-top: 0
+    &-form
+        margin-top: 37px
+        input
+            display: block
+            width: 100%
+            border: 1px solid rgba($dark,0.15)
+            font-size: 15px 
+            border-radius: 4px
+            padding: 20px
+            margin-bottom: 10px
+        &_btn
+            display: block
+            width: 100%
+            margin-bottom: 20px
+

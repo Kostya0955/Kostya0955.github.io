@@ -577,3 +577,57 @@ h2 {
     color: #ffffff;
     margin-top: 30px;
     text-align: center; }
+
+.object-page_gallery img {
+  float: right;
+  width: 60%; }
+
+.modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+  .modal-content {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 30px 50px;
+    max-width: 370px;
+    margin: 50px auto;
+    text-align: center;
+    -webkit-box-shadow: 0 12px 24px rgba(0, 0, 1, 0.18);
+    box-shadow: 0 12px 24px rgba(0, 0, 1, 0.18); }
+    .modal-content .close {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      font-size: 20px;
+      line-height: 1;
+      opacity: 0.5; }
+      .modal-content .close:hover {
+        cursor: pointer; }
+    .modal-content h4 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #009adf; }
+    .modal-content p {
+      font-size: 12px;
+      margin-top: 0; }
+  .modal-form {
+    margin-top: 37px; }
+    .modal-form input {
+      display: block;
+      width: 100%;
+      border: 1px solid rgba(19, 19, 19, 0.15);
+      font-size: 15px;
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 10px; }
+    .modal-form_btn {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px; }
