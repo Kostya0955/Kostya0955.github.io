@@ -223,7 +223,7 @@ h2 {
     padding: 10px;
     background-position: bottom center;
     background-repeat: no-repeat; }
-    .directions-block h5 {
+    .directions-block h3 {
       color: #009adf; }
 
 .slick-slide {
@@ -374,7 +374,7 @@ h2 {
   .team p {
     margin-bottom: 40px; }
   .team img {
-    width: 200px;
+    width: 250px;
     height: 300px; }
 
 .contacts {
